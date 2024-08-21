@@ -11,6 +11,7 @@
 }
 
 * {
+
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -175,17 +176,27 @@ nav {
 }
 
 .about__container {
-  display: grid;
+  display: flex;
+  justify-content: center;
   gap: 2rem;
   text-align: center;
 }
 
-.about__image img {
-  max-width: 350px;
+.about__image  {
+  justify-content: center;
+  display: flex;
+
   margin: auto;
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+
 }
 
+.about__image img {
+  
+  max-width: 220px;
+ height: auto;
+  margin-right: 5vw;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+}
 .product__contaainer .section__description {
   max-width: 600px;
 }
