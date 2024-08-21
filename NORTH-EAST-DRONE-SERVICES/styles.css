@@ -601,7 +601,7 @@ nav {
 .contact-info-upper-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   margin-top: 20px;
 }
 
@@ -612,9 +612,9 @@ nav {
 }
 
 .contact-icon {
-  width: 24px;
-  height: 24px;
-  margin-right: 10px;
+  width: 30px;
+  height: 30px;
+ 
 }
 
 a {
