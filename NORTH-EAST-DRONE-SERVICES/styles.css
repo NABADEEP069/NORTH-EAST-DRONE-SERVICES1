@@ -72,12 +72,14 @@ body {
 }
 
 nav {
+
+
   position: fixed;
   isolation: isolate;
-  top: 0;
+margin-top: -3vh;
   width: 100%;
   max-width: var(--max-width);
-  margin: auto;
+ 
   z-index: 9;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
@@ -451,6 +453,9 @@ nav {
 }
 
 @media (width > 576px) {
+
+
+
   .product__grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -480,8 +485,12 @@ nav {
   }
 }
 
+
+
+
 @media (width > 768px) {
   nav {
+ 
     padding: 2rem 1rem;
     position: static;
     display: flex;
@@ -625,20 +634,6 @@ a {
 a:hover {
   text-decoration: underline;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .banner {
   text-align: center;
   padding: 50px 0;
@@ -646,6 +641,44 @@ a:hover {
 }
 
 
+/* new code */
 
 
+.head{
 
+  display: flex;
+  justify-content: space-between;
+
+
+}
+
+
+.header-img{
+padding-top: 15vh;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  animation: header 2.5s infinite;
+}
+
+.header-title{
+
+  margin-left: 2vw;
+  font-size: 2vw;
+  justify-content: center;
+  padding-top: 15vh;
+
+}
+
+.header-discription{
+
+  font-size: 15px;
+}
+
+/* Adjust the size of the logo */
+nav .nav__bar img {
+
+margin-top: -3vh;
+  width: 60px; /* Adjust the width as needed */
+  height: auto; /* Maintain the aspect ratio */
+}
