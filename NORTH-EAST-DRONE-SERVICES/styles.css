@@ -26,7 +26,7 @@
 .section__header {
   margin-bottom: 1rem;
   font-size: 2.5rem;
-  font-weight: 500;
+  font-weight: bold;
   color: var(--text-dark);
 }
 
@@ -681,4 +681,140 @@ nav .nav__bar img {
 margin-top: -3vh;
   width: 60px; /* Adjust the width as needed */
   height: auto; /* Maintain the aspect ratio */
+}
+
+
+
+
+.abt-us {
+  
+  display: flex;
+  flex-direction: column;
+  text-align: center;  
+}
+.abt-head{
+
+  font-size: 5vw;
+  font-weight: bold;
+}
+
+
+.abt-img {
+  margin-top: 10vh;
+  display: flex;
+  justify-content: center; /* Centers the images horizontally */
+  gap: 3vw; /* Adds space between images */
+  flex-wrap: wrap; /* Allows images to wrap on smaller screens */
+  margin: 1vw;
+}
+.abt-img img {
+  width: 30vw;
+ height: 30vw;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5 ); /* Adds shadow to images */
+  object-fit: cover; /* Ensures images cover the area without distortion */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+.text-content {
+  width: 50vw;
+  padding: 2vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+}
+
+.title {
+  font-size: 4vw;
+  color: #003366;
+  margin-bottom: 1vw;
+}
+
+.description {
+  font-size: 2vw;
+  color: #333;
+}
+
+.slider {
+  width: 50vw;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.slider-wrapper {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.slide img {
+
+  width: 50vh;
+  height: 30vh;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.navigation-dots {
+  position: absolute;
+  bottom: 2%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 0.5vw;
+}
+
+.dot {
+  width: 1vw;
+  height: 1vw;
+  border-radius: 50%;
 }

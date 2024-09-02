@@ -87,3 +87,27 @@ function showDroneSlides() {
     setTimeout(showDroneSlides, 1500); // Change image every 3 seconds
 }
 
+const slides = document.querySelectorAll('.slide');
+const dots = document.querySelectorAll('.dot');
+let currentIndex = 0;
+
+function showSlide(index) {
+    const sliderWrapper = document.querySelector('.slider-wrapper');
+    sliderWrapper.style.transform = `translateX(${-index * 100}%)`;
+    dots.forEach(dot => dot.classList.remove('active'));
+    dots[index].classList.add('active');
+}
+
+function autoSlide() {
+    currentIndex = (currentIndex + 1) % slides.length;
+    showSlide(currentIndex);
+}
+
+dots.forEach((dot, index) => {
+    dot.addEventListener('click', () => {
+        currentIndex = index;
+        showSlide(index);
+    });
+});
+
+setInterval(autoSlide, 3000);
