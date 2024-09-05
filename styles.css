@@ -699,7 +699,10 @@ margin-top: -3vh;
   font-weight: bold;
 }
 
+.shp{
 
+   margin-bottom: 10vh;
+}
 .abt-img {
   margin-top: 10vh;
   display: flex;
